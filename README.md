@@ -1,10 +1,11 @@
 # kube-xds
 
-A small xDS server configurable using Kubernetes APIs.
+Kube-xds is a small xDS server configurable using Kubernetes APIs (such as a ConfigMap).
 
 It is intentionally lightweight with its primary use case being situations in
 which it is not possible or allowed to use 
-[dynamic configuration from the filesystem](https://www.envoyproxy.io/docs/envoy/latest/start/quick-start/configuration-dynamic-filesystem). 
+[dynamic configuration from the filesystem](https://www.envoyproxy.io/docs/envoy/latest/start/quick-start/configuration-dynamic-filesystem)
+and where using a service mesh (such as Istio) is (not yet) possible or feasible.
 
 ## Installation
 
